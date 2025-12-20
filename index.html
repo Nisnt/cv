@@ -12,16 +12,56 @@
     <!-- Tailwind CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+      };
+    </script>
+
     <!-- Icons -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
+    <meta name="author" content="Nishanth John" />
+    <meta
+      name="keywords"
+      content="Nishanth John, Software Engineer, Java Developer, Spring Boot, Angular Developer, Microservices Engineer, Trivandrum, Chennai"
+    />
+
+    <link rel="canonical" href="https://nisnt.github.io/cv/" />
+
+    <!-- Open Graph -->
+    <meta
+      property="og:title"
+      content="Nishanth John | Senior Software Engineer"
+    />
+    <meta
+      property="og:description"
+      content="Senior Software Engineer with 11+ years experience in Java, Spring Boot, Angular, Microservices"
+    />
+    <meta property="og:url" content="https://nisnt.github.io/cv/" />
+    <meta property="og:type" content="website" />
+    <meta
+      name="google-site-verification"
+      content="STbN-4TU76JQ1HWoSIJleZ2u3vhd-jZMHWgXuL2qE-Y"
+    />
   </head>
 
-  <body class="bg-gray-50 text-gray-800 leading-relaxed">
+  <body
+    class="bg-gray-50 text-gray-800 dark:bg-gray-900 dark:text-gray-200 leading-relaxed transition-colors"
+  >
     <!-- HERO -->
     <section class="bg-gradient-to-r from-blue-600 to-indigo-700 text-white">
+      <div class="absolute top-6 right-6">
+        <button
+          id="themeToggle"
+          class="bg-white/20 hover:bg-white/30 dark:bg-black/30 dark:hover:bg-black/50 text-white px-4 py-2 rounded-full text-sm backdrop-blur"
+        >
+          🌙 Dark
+        </button>
+      </div>
+
       <div class="max-w-5xl mx-auto px-6 py-20 text-center">
         <h1 class="text-4xl md:text-5xl font-bold">Nishanth John</h1>
         <p class="mt-4 text-xl">Senior Software Engineer</p>
@@ -48,6 +88,17 @@
             ><i class="fa-brands fa-github"></i
           ></a>
         </div>
+      </div>
+
+      <div class="mt-8">
+        <a
+          href="assets/Nishanth_John_Resume.pdf"
+          download
+          class="inline-flex items-center gap-2 bg-yellow-400 text-gray-900 px-6 py-3 rounded-full font-semibold hover:bg-yellow-300 transition"
+        >
+          <i class="fa-solid fa-download"></i>
+          Download Resume
+        </a>
       </div>
     </section>
 
@@ -173,5 +224,26 @@
         <p class="mt-2 text-sm">Built with ❤️ using GitHub Pages</p>
       </div>
     </footer>
+
+    <script>
+      const toggleBtn = document.getElementById("themeToggle");
+      const html = document.documentElement;
+
+      if (localStorage.theme === "dark") {
+        html.classList.add("dark");
+        toggleBtn.textContent = "☀️ Light";
+      }
+
+      toggleBtn.addEventListener("click", () => {
+        html.classList.toggle("dark");
+        if (html.classList.contains("dark")) {
+          localStorage.theme = "dark";
+          toggleBtn.textContent = "☀️ Light";
+        } else {
+          localStorage.theme = "light";
+          toggleBtn.textContent = "🌙 Dark";
+        }
+      });
+    </script>
   </body>
 </html>
