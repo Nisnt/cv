@@ -1,23 +1,401 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <title>Contact Me</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Me | Nishanth John</title>
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = { darkMode: "class" };
+    </script>
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
   </head>
-  <body>
-    <h3>My Contact Details</h3>
-    <p>Trivandrum, India</p>
-    <p>+91 9677249338</p>
-    <p>nisntjohn@gmail.com</p>
-    <hr>
-    <form class="" action="mailto:nisntjohn@gmail.com" method="post" enctype="text/plain">
-      <label>Your Name:</label>
-      <input type="text" name="yourName" value=""><br>
-      <label>Your Email:</label>
-      <input type="email" name="yourEmail" value=""><br>
-      <label>Your Message:</label><br>
-      <textarea name="yourMessage" rows="10" cols="30"></textarea><br>
-      <input type="submit" name="">
-    </form>
+
+  <body
+    class="bg-gray-50 text-gray-800 dark:bg-gray-900 dark:text-gray-200 transition-colors"
+  >
+    <!-- NAVIGATION -->
+    <nav
+      class="sticky top-0 z-40 bg-white dark:bg-gray-800 shadow-sm border-b border-gray-200 dark:border-gray-700"
+    >
+      <div
+        class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center"
+      >
+        <a
+          href="index.html"
+          class="text-xl font-bold text-blue-600 dark:text-blue-400"
+          >Nishanth</a
+        >
+        <div class="flex items-center gap-6">
+          <a
+            href="index.html"
+            class="text-sm hover:text-blue-600 dark:hover:text-blue-400 transition"
+            >Home</a
+          >
+          <a
+            href="index.html#experience"
+            class="text-sm hover:text-blue-600 dark:hover:text-blue-400 transition"
+            >Experience</a
+          >
+          <a
+            href="index.html#projects"
+            class="text-sm hover:text-blue-600 dark:hover:text-blue-400 transition"
+            >Projects</a
+          >
+          <a
+            href="hobbies.html"
+            class="text-sm hover:text-blue-600 dark:hover:text-blue-400 transition"
+            >Hobbies</a
+          >
+          <a
+            href="contact-me.html"
+            class="text-sm hover:text-blue-600 dark:hover:text-blue-400 transition font-semibold text-blue-600 dark:text-blue-400"
+            >Contact</a
+          >
+          <button
+            id="themeToggle"
+            class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full text-xs hover:bg-gray-300 dark:hover:bg-gray-600 transition"
+          >
+            🌙
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section
+      class="bg-gradient-to-r from-blue-600 to-indigo-700 text-white py-12"
+    >
+      <div class="max-w-5xl mx-auto px-6 text-center">
+        <h1 class="text-4xl font-bold">Get In Touch</h1>
+        <p class="mt-4 text-blue-100 max-w-2xl mx-auto">
+          I'm always open to new opportunities and interesting projects. Feel
+          free to reach out!
+        </p>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="max-w-5xl mx-auto px-6 py-16">
+      <div class="grid md:grid-cols-2 gap-12">
+        <!-- Contact Information -->
+        <div>
+          <h2 class="text-3xl font-bold mb-8">Contact Information</h2>
+
+          <div class="space-y-6">
+            <div class="flex gap-4">
+              <div
+                class="text-2xl text-blue-600 dark:text-blue-400 flex-shrink-0"
+              >
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div>
+                <h3 class="font-semibold text-lg mb-1">Location</h3>
+                <p class="text-gray-600 dark:text-gray-400">
+                  Trivandrum, India
+                </p>
+              </div>
+            </div>
+
+            <div class="flex gap-4">
+              <div
+                class="text-2xl text-blue-600 dark:text-blue-400 flex-shrink-0"
+              >
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div>
+                <h3 class="font-semibold text-lg mb-1">Phone</h3>
+                <a
+                  href="tel:+919677249338"
+                  class="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400"
+                  >+91 9677249338</a
+                >
+              </div>
+            </div>
+
+            <div class="flex gap-4">
+              <div
+                class="text-2xl text-blue-600 dark:text-blue-400 flex-shrink-0"
+              >
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div>
+                <h3 class="font-semibold text-lg mb-1">Email</h3>
+                <a
+                  href="mailto:nisntjohn@gmail.com"
+                  class="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400"
+                  >nisntjohn@gmail.com</a
+                >
+              </div>
+            </div>
+
+            <div class="flex gap-4">
+              <div
+                class="text-2xl text-blue-600 dark:text-blue-400 flex-shrink-0"
+              >
+                <i class="fa-solid fa-globe"></i>
+              </div>
+              <div>
+                <h3 class="font-semibold text-lg mb-1">Social Links</h3>
+                <div class="flex gap-4 mt-2">
+                  <a
+                    href="https://www.linkedin.com/in/nisnt/"
+                    target="_blank"
+                    class="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 text-lg"
+                  >
+                    <i class="fa-brands fa-linkedin"></i>
+                  </a>
+                  <a
+                    href="https://github.com/Nisnt"
+                    target="_blank"
+                    class="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 text-lg"
+                  >
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="mt-12 p-6 bg-blue-50 dark:bg-gray-800 rounded-xl">
+            <h3 class="font-semibold text-lg mb-4">
+              Preferred Contact Methods
+            </h3>
+            <ul class="space-y-3">
+              <li class="flex items-center gap-2">
+                <i
+                  class="fa-solid fa-check text-green-600 dark:text-green-400"
+                ></i>
+                <span class="text-sm">Email for detailed discussions</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i
+                  class="fa-solid fa-check text-green-600 dark:text-green-400"
+                ></i>
+                <span class="text-sm"
+                  >LinkedIn for professional networking</span
+                >
+              </li>
+              <li class="flex items-center gap-2">
+                <i
+                  class="fa-solid fa-check text-green-600 dark:text-green-400"
+                ></i>
+                <span class="text-sm">GitHub to explore my projects</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div>
+          <h2 class="text-3xl font-bold mb-8">Send a Message</h2>
+
+          <form
+            class="space-y-6"
+            action="mailto:nisntjohn@gmail.com"
+            method="POST"
+            enctype="text/plain"
+          >
+            <div>
+              <label class="block text-sm font-semibold mb-2"
+                >Your Name *</label
+              >
+              <input
+                type="text"
+                name="yourName"
+                required
+                class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400"
+                placeholder="John Doe"
+              />
+            </div>
+
+            <div>
+              <label class="block text-sm font-semibold mb-2"
+                >Your Email *</label
+              >
+              <input
+                type="email"
+                name="yourEmail"
+                required
+                class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400"
+                placeholder="john@example.com"
+              />
+            </div>
+
+            <div>
+              <label class="block text-sm font-semibold mb-2">Subject *</label>
+              <input
+                type="text"
+                name="subject"
+                required
+                class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400"
+                placeholder="What's this about?"
+              />
+            </div>
+
+            <div>
+              <label class="block text-sm font-semibold mb-2">Message *</label>
+              <textarea
+                name="yourMessage"
+                rows="6"
+                required
+                class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400 resize-none"
+                placeholder="Your message here..."
+              ></textarea>
+              <p class="text-xs text-gray-500 dark:text-gray-400 mt-2">
+                Note: This form uses mailto. For better reliability, please use
+                email or LinkedIn directly.
+              </p>
+            </div>
+
+            <button
+              type="submit"
+              class="w-full bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 dark:hover:bg-blue-500 transition flex items-center justify-center gap-2"
+            >
+              <i class="fa-solid fa-paper-plane"></i>
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-900 text-gray-300 py-12 border-t border-gray-800">
+      <div class="max-w-5xl mx-auto px-6">
+        <div class="grid md:grid-cols-3 gap-8 mb-8">
+          <div>
+            <h4 class="font-semibold mb-4 text-white">Quick Links</h4>
+            <ul class="space-y-2 text-sm">
+              <li>
+                <a href="index.html" class="hover:text-blue-400 transition"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="index.html#experience"
+                  class="hover:text-blue-400 transition"
+                  >Experience</a
+                >
+              </li>
+              <li>
+                <a
+                  href="index.html#projects"
+                  class="hover:text-blue-400 transition"
+                  >Projects</a
+                >
+              </li>
+              <li>
+                <a href="hobbies.html" class="hover:text-blue-400 transition"
+                  >Hobbies</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-semibold mb-4 text-white">Connect</h4>
+            <ul class="space-y-2 text-sm">
+              <li>
+                <a
+                  href="mailto:nisntjohn@gmail.com"
+                  class="hover:text-blue-400 transition"
+                  >Email</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/nisnt/"
+                  target="_blank"
+                  class="hover:text-blue-400 transition"
+                  >LinkedIn</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://github.com/Nisnt"
+                  target="_blank"
+                  class="hover:text-blue-400 transition"
+                  >GitHub</a
+                >
+              </li>
+              <li>
+                <a href="contact-me.html" class="hover:text-blue-400 transition"
+                  >Contact Form</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-semibold mb-4 text-white">Resources</h4>
+            <ul class="space-y-2 text-sm">
+              <li>
+                <a
+                  href="assets/Nishanth_John_Resume.pdf"
+                  download
+                  class="hover:text-blue-400 transition"
+                  >Download Resume</a
+                >
+              </li>
+              <li>
+                <a href="robots.txt" class="hover:text-blue-400 transition"
+                  >Robots.txt</a
+                >
+              </li>
+              <li>
+                <a href="sitemap.xml" class="hover:text-blue-400 transition"
+                  >Sitemap</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="border-t border-gray-800 pt-8 text-center text-sm">
+          <p>&copy; 2026 Nishanth John. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- STICKY CTA -->
+    <div class="fixed bottom-6 right-6 z-50">
+      <div
+        class="flex gap-3 bg-blue-600 text-white px-5 py-3 rounded-full shadow-lg hover:bg-blue-700 transition"
+      >
+        <a href="mailto:nisntjohn@gmail.com"
+          ><i class="fa-solid fa-envelope"></i
+        ></a>
+        <a href="https://www.linkedin.com/in/nisnt/" target="_blank"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+        <a href="assets/Nishanth_John_Resume.pdf" download
+          ><i class="fa-solid fa-download"></i
+        ></a>
+      </div>
+    </div>
+
+    <!-- DARK MODE SCRIPT -->
+    <script>
+      const btn = document.getElementById("themeToggle");
+      const html = document.documentElement;
+
+      if (localStorage.theme === "dark") {
+        html.classList.add("dark");
+        btn.textContent = "☀️";
+      }
+
+      btn.addEventListener("click", () => {
+        html.classList.toggle("dark");
+        localStorage.theme = html.classList.contains("dark") ? "dark" : "light";
+        btn.textContent = html.classList.contains("dark") ? "☀️" : "🌙";
+      });
+    </script>
   </body>
 </html>

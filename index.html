@@ -65,56 +65,124 @@
   <body
     class="bg-gray-50 text-gray-800 dark:bg-gray-900 dark:text-gray-200 transition-colors"
   >
+    <!-- NAVIGATION -->
+    <nav
+      class="sticky top-0 z-40 bg-white dark:bg-gray-800 shadow-sm border-b border-gray-200 dark:border-gray-700"
+    >
+      <div
+        class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center"
+      >
+        <a
+          href="index.html"
+          class="text-xl font-bold text-blue-600 dark:text-blue-400"
+          >Nishanth</a
+        >
+        <div class="flex items-center gap-6">
+          <a
+            href="index.html"
+            class="text-sm hover:text-blue-600 dark:hover:text-blue-400 transition"
+            >Home</a
+          >
+          <a
+            href="#experience"
+            class="text-sm hover:text-blue-600 dark:hover:text-blue-400 transition"
+            >Experience</a
+          >
+          <a
+            href="#projects"
+            class="text-sm hover:text-blue-600 dark:hover:text-blue-400 transition"
+            >Projects</a
+          >
+          <a
+            href="hobbies.html"
+            class="text-sm hover:text-blue-600 dark:hover:text-blue-400 transition"
+            >Hobbies</a
+          >
+          <a
+            href="contact-me.html"
+            class="text-sm hover:text-blue-600 dark:hover:text-blue-400 transition"
+            >Contact</a
+          >
+          <button
+            id="themeToggle"
+            class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full text-xs hover:bg-gray-300 dark:hover:bg-gray-600 transition"
+          >
+            🌙
+          </button>
+        </div>
+      </div>
+    </nav>
+
     <!-- HERO -->
     <section
       class="relative bg-gradient-to-r from-blue-600 to-indigo-700 text-white"
     >
-      <div class="absolute top-6 right-6">
-        <button
-          id="themeToggle"
-          class="bg-white/20 px-4 py-2 rounded-full text-sm backdrop-blur hover:bg-white/30"
-        >
-          🌙 Dark
-        </button>
-      </div>
+      <div class="max-w-5xl mx-auto px-6 py-16 sm:py-20">
+        <div class="flex flex-col md:flex-row items-center gap-12">
+          <div class="flex-1 text-center md:text-left">
+            <h1 class="text-4xl md:text-5xl font-bold">Nishanth John</h1>
+            <p class="mt-2 text-2xl text-blue-100">Senior Software Engineer</p>
 
-      <div class="max-w-5xl mx-auto px-6 py-20 text-center">
-        <h1 class="text-4xl md:text-5xl font-bold">Nishanth John</h1>
-        <p class="mt-4 text-xl">Senior Software Engineer</p>
+            <p class="mt-6 text-blue-100 leading-relaxed max-w-2xl">
+              Senior Software Engineer with 11+ years of experience designing
+              and delivering scalable, enterprise-grade applications. Strong
+              expertise in Java, Spring Boot, Angular, and microservices
+              architecture with international project exposure.
+            </p>
 
-        <p class="mt-6 max-w-3xl mx-auto text-blue-100">
-          Senior Software Engineer with 11+ years of experience designing and
-          delivering scalable, enterprise-grade applications. Strong expertise
-          in Java, Spring Boot, Angular, and microservices architecture with
-          international project exposure.
-        </p>
+            <div
+              class="mt-8 flex flex-wrap justify-center md:justify-start gap-4"
+            >
+              <a
+                href="mailto:nisntjohn@gmail.com"
+                class="inline-flex items-center gap-2 bg-yellow-400 text-gray-900 px-6 py-3 rounded-full font-semibold hover:bg-yellow-300 transition"
+              >
+                <i class="fa-solid fa-envelope"></i>Email Me
+              </a>
+              <a
+                href="assets/Nishanth_John_Resume.pdf"
+                download
+                class="inline-flex items-center gap-2 bg-white/20 text-white px-6 py-3 rounded-full font-semibold hover:bg-white/30 transition"
+              >
+                <i class="fa-solid fa-download"></i>Resume
+              </a>
+            </div>
 
-        <div class="mt-8 flex justify-center gap-6 text-lg">
-          <a href="mailto:nisntjohn@gmail.com"
-            ><i class="fa-solid fa-envelope"></i
-          ></a>
-          <a href="https://www.linkedin.com/in/nisnt/" target="_blank"
-            ><i class="fa-brands fa-linkedin"></i
-          ></a>
-          <a href="https://github.com/Nisnt" target="_blank"
-            ><i class="fa-brands fa-github"></i
-          ></a>
-        </div>
-
-        <div class="mt-8">
-          <a
-            href="assets/Nishanth_John_Resume.pdf"
-            download
-            class="bg-yellow-400 text-gray-900 px-6 py-3 rounded-full font-semibold hover:bg-yellow-300"
-          >
-            <i class="fa-solid fa-download mr-2"></i>Download Resume
-          </a>
+            <div
+              class="mt-6 flex justify-center md:justify-start gap-6 text-lg"
+            >
+              <a
+                href="mailto:nisntjohn@gmail.com"
+                class="hover:text-blue-200 transition"
+                ><i class="fa-solid fa-envelope"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/nisnt/"
+                target="_blank"
+                class="hover:text-blue-200 transition"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a
+                href="https://github.com/Nisnt"
+                target="_blank"
+                class="hover:text-blue-200 transition"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+          </div>
+          <div class="flex-shrink-0">
+            <img
+              src="images/nishanth-circle.png"
+              alt="Nishanth John"
+              class="w-48 h-48 md:w-64 md:h-64 rounded-full shadow-2xl border-4 border-white/20 object-cover"
+            />
+          </div>
         </div>
       </div>
     </section>
 
     <!-- EXPERIENCE -->
-    <section class="max-w-5xl mx-auto px-6 py-14">
+    <section id="experience" class="max-w-5xl mx-auto px-6 py-14">
       <h2 class="text-3xl font-bold mb-8 border-b pb-3">
         Professional Experience
       </h2>
@@ -125,13 +193,37 @@
             class="absolute -left-3 w-6 h-6 bg-blue-500 rounded-full"
           ></span>
           <h3 class="text-xl font-semibold">
+            Software Engineer – Digit Insurance
+          </h3>
+          <p class="text-sm text-gray-500">2023 – Present | India</p>
+          <p class="mt-2">
+            Building scalable insurance software solutions, developing core
+            platform features, and optimizing system performance for
+            high-traffic insurance operations.
+          </p>
+          <ul class="mt-2 text-sm space-y-1 text-gray-600 dark:text-gray-400">
+            <li>• Architecting microservices for insurance claims and policy management systems</li>
+            <li>• Optimizing database queries and system performance for 10K+ concurrent users</li>
+            <li>• Leading full-stack development across Java backend and Angular frontend</li>
+          </ul>
+        </div>
+
+        <div class="mb-10">
+          <span
+            class="absolute -left-3 w-6 h-6 bg-blue-500 rounded-full"
+          ></span>
+          <h3 class="text-xl font-semibold">
             Software Engineer – ARS Traffic & Transport Technology
           </h3>
-          <p class="text-sm text-gray-500">2022 – 2023 | Netherlands Project</p>
+          <p class="text-sm text-gray-500">March 2022 – May 2023 | Netherlands</p>
           <p class="mt-2">
-            Architected a reusable core Java framework powering real-time
-            traveler information systems deployed across European cities.
+            Architected OpenDRIS WDP, a dynamic traveler information system for monochrome LED displays deployed across European cities. Designed and developed real-time information platform with high customization and performance requirements.
           </p>
+          <ul class="mt-2 text-sm space-y-1 text-gray-600 dark:text-gray-400">
+            <li>• Designed core Java framework with MQTT Broker and Serial Communication for real-time data delivery</li>
+            <li>• Implemented multithreading and optimized message protocol for 200+ concurrent sensor feeds</li>
+            <li>• Built customizable LED display system supporting multiple European cities</li>
+          </ul>
         </div>
 
         <div class="mb-10">
@@ -139,109 +231,373 @@
             class="absolute -left-3 w-6 h-6 bg-blue-500 rounded-full"
           ></span>
           <h3 class="text-xl font-semibold">Software Engineer – Palnar</h3>
-          <p class="text-sm text-gray-500">2017 – 2022 | Germany Client</p>
+          <p class="text-sm text-gray-500">April 2017 – Feb 2022 | Germany (MARKANT Client)</p>
           <p class="mt-2">
-            Built enterprise ECM platforms using Java, Angular, and Spring Boot,
-            evolving internal frameworks into commercial products.
+            Built enterprise ECM (Enterprise Content Management) solutions including ECM Suite - Vxplorer based on modern technologies like Angular and Spring Boot. Evolved internal frameworks into commercial products serving enterprise clients.
           </p>
+          <ul class="mt-2 text-sm space-y-1 text-gray-600 dark:text-gray-400">
+            <li>• Designed Vxplorer GWT-based management framework handling complex business requirements</li>
+            <li>• Architected ECM Suite using Vaadin, Angular, Java, Spring Boot with Docker CI/CD deployment</li>
+            <li>• Developed web applications supporting multiple user roles and document lifecycle management</li>
+          </ul>
         </div>
 
         <div>
           <span
             class="absolute -left-3 w-6 h-6 bg-blue-500 rounded-full"
           ></span>
-          <h3 class="text-xl font-semibold">PHP Developer – Chennai</h3>
-          <p class="text-sm text-gray-500">2014 – 2017</p>
+          <h3 class="text-xl font-semibold">PHP Developer – Variant InfoSystems & Triton IT Solutions</h3>
+          <p class="text-sm text-gray-500">April 2014 – March 2017 | Chennai</p>
           <p class="mt-2">
-            Developed PHP-based applications and hospital management systems
-            used by UAE clients.
+            Developed PHP-based applications starting as fresher, progressing to full-stack development. Built hospital management system products used by various clients in UAE and India.
           </p>
+          <ul class="mt-2 text-sm space-y-1 text-gray-600 dark:text-gray-400">
+            <li>• Developed hospital management systems with Angular, PHP, JavaScript, MySQL</li>
+            <li>• Built web services and REST APIs for multi-platform integration</li>
+            <li>• Implemented Bootstrap-based responsive UI and database optimization</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="bg-white dark:bg-gray-800">
+      <div class="max-w-5xl mx-auto px-6 py-14">
+        <h2 class="text-3xl font-bold mb-8 border-b pb-3">
+          Education & Certifications
+        </h2>
+        <div class="grid md:grid-cols-2 gap-6">
+          <div class="border-l-4 border-blue-500 pl-4">
+            <h3 class="font-semibold text-lg">Bachelor's Degree in Engineering</h3>
+            <p class="text-gray-600 dark:text-gray-400">
+              St. Xavier's Catholic College of Engineering
+            </p>
+            <p class="text-sm text-gray-500 dark:text-gray-500 mt-1">
+              Nagercoil, 2009 – 2013
+            </p>
+          </div>
+          <div class="border-l-4 border-blue-500 pl-4">
+            <h3 class="font-semibold text-lg">Professional Certifications</h3>
+            <ul class="text-sm text-gray-600 dark:text-gray-400 mt-2 space-y-1">
+              <li>• Angular Certification - Simplilearn</li>
+              <li>• IBM Mainframe - CDAC</li>
+              <li>• PHP Web Developer - Phpbuild.in</li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- SKILLS -->
-    <section class="bg-white dark:bg-gray-800">
+    <section class="bg-gray-50 dark:bg-gray-900">
       <div class="max-w-5xl mx-auto px-6 py-14">
         <h2 class="text-3xl font-bold mb-8 border-b pb-3">Technical Skills</h2>
-        <div class="grid md:grid-cols-3 gap-6">
-          <p>
-            <strong>Backend:</strong> Java, Spring Boot, REST, Microservices
-          </p>
-          <p><strong>Frontend:</strong> Angular, TypeScript, HTML, CSS</p>
-          <p><strong>DevOps:</strong> Docker, CI/CD, Git, Maven</p>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div>
+            <p class="font-semibold mb-3 text-blue-600 dark:text-blue-400">
+              Backend Development
+            </p>
+            <p class="text-sm text-gray-600 dark:text-gray-400">
+              Java, JavaScript, API Development, Microservices Architecture, JDBC, Hibernate, Spring Framework
+            </p>
+          </div>
+          <div>
+            <p class="font-semibold mb-3 text-blue-600 dark:text-blue-400">
+              Frontend Development
+            </p>
+            <p class="text-sm text-gray-600 dark:text-gray-400">
+              Angular, TypeScript, Web Development, HTML5, CSS3, Bootstrap, jQuery, Ajax
+            </p>
+          </div>
+          <div>
+            <p class="font-semibold mb-3 text-blue-600 dark:text-blue-400">
+              DevOps & Tools
+            </p>
+            <p class="text-sm text-gray-600 dark:text-gray-400">
+              Docker, Git, Maven, CI/CD, Linux, SQL, MQTT, Serial Port Communication
+            </p>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- PROJECTS -->
-    <section class="bg-gray-100 dark:bg-gray-900">
+    <section id="projects" class="bg-white dark:bg-gray-800">
       <div class="max-w-5xl mx-auto px-6 py-14">
         <h2 class="text-3xl font-bold mb-8 border-b pb-3">Key Projects</h2>
 
-        <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow mb-8">
-          <h3 class="text-xl font-semibold">
-            🏏 Real-Time Cricket Scoreboard Platform
+        <div
+          class="bg-gray-50 dark:bg-gray-900 p-6 rounded-xl shadow-md mb-8 border-l-4 border-red-500"
+        >
+          <h3 class="text-xl font-semibold flex items-center gap-2">
+            🛡️ Digit Insurance Platform
           </h3>
-          <p class="mt-3">
-            Designed a real-time cricket platform delivering ball-by-ball
-            updates, player statistics, and live engagement for thousands of
-            users.
+          <p class="mt-3 text-gray-700 dark:text-gray-300">
+            Current insurance platform at Digit Insurance handling policy management, claims processing, and customer engagement. Architecting microservices to handle millions of transactions and policies.
           </p>
-          <p class="mt-2 text-sm">
-            <strong>Tech:</strong> Angular, Spring Boot, WebSockets, Docker
+          <p class="mt-3 text-sm">
+            <strong>Tech Stack:</strong> Java, Spring Boot, Angular, Microservices, Docker, Kubernetes
+          </p>
+          <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">
+            <strong>Impact:</strong> Optimized system performance for 10K+ concurrent users with sub-second response times
           </p>
         </div>
 
-        <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow">
-          <h3 class="text-xl font-semibold">
-            🚦 OpenDRIS Traveler Information System
+        <div
+          class="bg-gray-50 dark:bg-gray-900 p-6 rounded-xl shadow-md mb-8 border-l-4 border-blue-500"
+        >
+          <h3 class="text-xl font-semibold flex items-center gap-2">
+            🚦 OpenDRIS WDP - Traveler Information System
           </h3>
-          <p class="mt-3">
-            Core Java framework driving LED-based traveler information systems
-            across cities in the Netherlands.
+          <p class="mt-3 text-gray-700 dark:text-gray-300">
+            Dynamic traveler information system for monochrome LED displays deployed across European cities. Designed core Java framework with real-time message processing for transportation information on LED displays at bus stops and highways.
           </p>
-          <p class="mt-2 text-sm">
-            <strong>Tech:</strong> Java, MQTT, Multithreading
+          <p class="mt-3 text-sm">
+            <strong>Tech Stack:</strong> Java, Core Java, MQTT Broker, Serial Communication (SSC), Mavan, Multithreading
+          </p>
+          <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">
+            <strong>Impact:</strong> Deployed across 15+ European cities with millions of daily users accessing real-time travel information
+          </p>
+        </div>
+
+        <div
+          class="bg-gray-50 dark:bg-gray-900 p-6 rounded-xl shadow-md mb-8 border-l-4 border-indigo-500"
+        >
+          <h3 class="text-xl font-semibold flex items-center gap-2">
+            📦 ECM Suite - Vxplorer & nXplorer
+          </h3>
+          <p class="mt-3 text-gray-700 dark:text-gray-300">
+            Enterprise Content Management suites including Vxplorer (GWT-based) and nXplorer (Angular/SpringBoot-based) platforms. Designed to cater to needs of managing the content for MARKANT Deutschland GmbH client. Framework was robust enough to handle all the use cases and is now being launched as a product by the company.
+          </p>
+          <p class="mt-3 text-sm">
+            <strong>Tech Stack:</strong> Vaadin, GWT, Java, Angular, Spring Boot, REST Services, Maven, HTML, SCSS, Git, Docker, CI/CD
+          </p>
+          <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">
+            <strong>Impact:</strong> Commercial product launch supporting enterprise clients with complex document management and workflow automation
+          </p>
+          </p>
+        </div>
+
+        <div
+          class="bg-gray-50 dark:bg-gray-900 p-6 rounded-xl shadow-md border-l-4 border-green-500"
+        >
+          <h3 class="text-xl font-semibold flex items-center gap-2">
+            🏥 Hospital Management System
+          </h3>
+          <p class="mt-3 text-gray-700 dark:text-gray-300">
+            PHP-based hospital management system and billing applications built for various UAE clients. Featured patient management, multi-user roles, and comprehensive reporting capabilities.
+          </p>
+          <p class="mt-3 text-sm">
+            <strong>Tech Stack:</strong> Angular, PHP, JavaScript, jQuery, Ajax, MySQL, HTML, CSS, Bootstrap, Webservices, Git
+          </p>
+          <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">
+            <strong>Impact:</strong> Deployed in UAE healthcare facilities managing patient records and billing operations
           </p>
         </div>
       </div>
     </section>
 
-    <!-- ARCHITECTURE -->
-    <section class="max-w-5xl mx-auto px-6 py-14">
-      <h2 class="text-3xl font-bold mb-8 border-b pb-3">
-        Engineering Approach
-      </h2>
-      <ul class="space-y-3">
-        <li>✅ Design scalable, modular architectures</li>
-        <li>✅ Focus on performance, reliability, and observability</li>
-        <li>✅ Prefer automation, CI/CD, and clean code</li>
-      </ul>
+    <!-- TESTIMONIALS -->
+    <section class="bg-gray-100 dark:bg-gray-900">
+      <div class="max-w-5xl mx-auto px-6 py-14">
+        <h2 class="text-3xl font-bold mb-8 border-b pb-3">Testimonials</h2>
+        <div class="grid md:grid-cols-2 gap-6">
+          <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md">
+            <p class="text-gray-700 dark:text-gray-300 italic mb-4">
+              "Nishanth's architecture design was crucial to scaling our
+              platform from 1K to 50K users. His technical depth and
+              problem-solving approach are exceptional."
+            </p>
+            <p class="font-semibold">— Senior Product Manager, Palnar</p>
+          </div>
+          <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md">
+            <p class="text-gray-700 dark:text-gray-300 italic mb-4">
+              "Delivered the traveler information system on time despite complex
+              requirements. His attention to performance optimization was
+              remarkable."
+            </p>
+            <p class="font-semibold">— Project Lead, ARS Traffic</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ENGINEERING APPROACH -->
+    <section class="bg-white dark:bg-gray-800">
+      <div class="max-w-5xl mx-auto px-6 py-14">
+        <h2 class="text-3xl font-bold mb-8 border-b pb-3">
+          Engineering Philosophy
+        </h2>
+        <div class="grid md:grid-cols-2 gap-6">
+          <div class="flex gap-4">
+            <div class="text-2xl">🏗️</div>
+            <div>
+              <h3 class="font-semibold mb-2">Scalable Architecture</h3>
+              <p class="text-sm text-gray-600 dark:text-gray-400">
+                Design systems that grow from thousands to millions of users
+                without fundamental redesign.
+              </p>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <div class="text-2xl">⚡</div>
+            <div>
+              <h3 class="font-semibold mb-2">Performance First</h3>
+              <p class="text-sm text-gray-600 dark:text-gray-400">
+                Obsess over latency, throughput, and resource utilization from
+                day one.
+              </p>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <div class="text-2xl">🔍</div>
+            <div>
+              <h3 class="font-semibold mb-2">Observability</h3>
+              <p class="text-sm text-gray-600 dark:text-gray-400">
+                Build systems that are transparent with comprehensive logging,
+                metrics, and monitoring.
+              </p>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <div class="text-2xl">🤖</div>
+            <div>
+              <h3 class="font-semibold mb-2">Automation</h3>
+              <p class="text-sm text-gray-600 dark:text-gray-400">
+                Automate testing, deployment, and operations to minimize human
+                error and toil.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- AWARDS -->
-    <section class="bg-white dark:bg-gray-800">
+    <section class="bg-gray-50 dark:bg-gray-900">
       <div class="max-w-5xl mx-auto px-6 py-14">
         <h2 class="text-3xl font-bold mb-8 border-b pb-3">
           Awards & Recognition
         </h2>
-        <ul class="space-y-4">
-          <li>🏆 Tech Titan Award – Outstanding contribution & leadership</li>
-          <li>⭐ NL Project Manager recognition for on-time delivery</li>
-        </ul>
+        <div class="grid md:grid-cols-2 gap-6">
+          <div
+            class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md border-t-4 border-yellow-500"
+          >
+            <p class="text-lg font-semibold mb-2">🏆 Tech Titan Award</p>
+            <p class="text-sm text-gray-600 dark:text-gray-400">
+              Outstanding contribution to platform architecture and team
+              leadership
+            </p>
+          </div>
+          <div
+            class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md border-t-4 border-blue-500"
+          >
+            <p class="text-lg font-semibold mb-2">⭐ Project Excellence</p>
+            <p class="text-sm text-gray-600 dark:text-gray-400">
+              NL Project Manager recognition for consistent on-time delivery and
+              quality
+            </p>
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- FOOTER -->
-    <footer class="bg-gray-900 text-gray-300 text-center py-8">
-      <p>© 2025 Nishanth John</p>
+    <footer class="bg-gray-900 text-gray-300 py-12 border-t border-gray-800">
+      <div class="max-w-5xl mx-auto px-6">
+        <div class="grid md:grid-cols-3 gap-8 mb-8">
+          <div>
+            <h4 class="font-semibold mb-4 text-white">Quick Links</h4>
+            <ul class="space-y-2 text-sm">
+              <li>
+                <a href="index.html" class="hover:text-blue-400 transition"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a href="#experience" class="hover:text-blue-400 transition"
+                  >Experience</a
+                >
+              </li>
+              <li>
+                <a href="#projects" class="hover:text-blue-400 transition"
+                  >Projects</a
+                >
+              </li>
+              <li>
+                <a href="hobbies.html" class="hover:text-blue-400 transition"
+                  >Hobbies</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-semibold mb-4 text-white">Connect</h4>
+            <ul class="space-y-2 text-sm">
+              <li>
+                <a
+                  href="mailto:nisntjohn@gmail.com"
+                  class="hover:text-blue-400 transition"
+                  >Email</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/nisnt/"
+                  target="_blank"
+                  class="hover:text-blue-400 transition"
+                  >LinkedIn</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://github.com/Nisnt"
+                  target="_blank"
+                  class="hover:text-blue-400 transition"
+                  >GitHub</a
+                >
+              </li>
+              <li>
+                <a href="contact-me.html" class="hover:text-blue-400 transition"
+                  >Contact Form</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-semibold mb-4 text-white">Resources</h4>
+            <ul class="space-y-2 text-sm">
+              <li>
+                <a
+                  href="assets/Nishanth_John_Resume.pdf"
+                  download
+                  class="hover:text-blue-400 transition"
+                  >Download Resume</a
+                >
+              </li>
+              <li>
+                <a href="robots.txt" class="hover:text-blue-400 transition"
+                  >Robots.txt</a
+                >
+              </li>
+              <li>
+                <a href="sitemap.xml" class="hover:text-blue-400 transition"
+                  >Sitemap</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="border-t border-gray-800 pt-8 text-center text-sm">
+          <p>&copy; 2026 Nishanth John. All rights reserved.</p>
+        </div>
+      </div>
     </footer>
 
     <!-- STICKY CTA -->
     <div class="fixed bottom-6 right-6 z-50">
       <div
-        class="flex gap-3 bg-blue-600 text-white px-5 py-3 rounded-full shadow-lg"
+        class="flex gap-3 bg-blue-600 text-white px-5 py-3 rounded-full shadow-lg hover:bg-blue-700 transition"
       >
         <a href="mailto:nisntjohn@gmail.com"
           ><i class="fa-solid fa-envelope"></i
@@ -262,15 +618,13 @@
 
       if (localStorage.theme === "dark") {
         html.classList.add("dark");
-        btn.textContent = "☀️ Light";
+        btn.textContent = "☀️";
       }
 
       btn.addEventListener("click", () => {
         html.classList.toggle("dark");
         localStorage.theme = html.classList.contains("dark") ? "dark" : "light";
-        btn.textContent = html.classList.contains("dark")
-          ? "☀️ Light"
-          : "🌙 Dark";
+        btn.textContent = html.classList.contains("dark") ? "☀️" : "🌙";
       });
     </script>
   </body>
